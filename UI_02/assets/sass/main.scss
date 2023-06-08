@@ -1,0 +1,75 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  width: 100%;
+  display: block;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: Helvetica, Arial, Helvetica, sans-serif;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #999;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: max-content;
+  width: max-content;
+}
+
+h1 {
+  margin-bottom: 5rem;
+}
+
+.process {
+  height: 5rem;
+  width: 60rem;
+  border-radius: 90px;
+  border: 1px solid #999;
+  background-color: #fff;
+  cursor: w-resize;
+  overflow: hidden;
+
+  .range {
+    display: inline-block;
+    height: 5rem;
+    width: 20rem;
+    line-height: 5rem;
+    font-size: 2.4rem;
+    text-align: center;
+    color: #fff;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      270deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 0%,
+      rgba(0, 212, 255, 1) 100%
+    );
+  }
+}
