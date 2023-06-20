@@ -3,7 +3,7 @@ const $$ = document.querySelectorAll.bind(document);
 const formNode = $('.form');
 const inputNode = $('input[type="text"]');
 const todosNode = $('.todos');
-const data = JSON.parse(localStorage.data) || [];
+const data = localStorage.data !== undefined ? JSON.parse(localStorage.data) : [];
 
 render(data);
 
