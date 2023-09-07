@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and drop</title>
+    <link rel="stylesheet" href="./assets/sass/main.css" />
+  </head>
+  <body>
+    <div class="box" ondragover="handleOver(event)" ondrop="handleDrop(event)">
+      <div class="draggable" id="img-drag" draggable="true" ondragstart="handleDrag(event)"></div>
+    </div>
+    <div class="box" ondragover="handleOver(event)" ondrop="handleDrop(event)"></div>
+    <div class="box" ondragover="handleOver(event)" ondrop="handleDrop(event)"></div>
+    <div class="box" ondragover="handleOver(event)" ondrop="handleDrop(event)"></div>
+    <div class="box" ondragover="handleOver(event)" ondrop="handleDrop(event)"></div>
+  </body>
+  <script src="./assets/js/main.js"></script>
+</html>
